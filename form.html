@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form tag demo</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="username"size="20" placeholder="Enter UserName " >
+        <input type="password" name="password" size="20" placeholder="password" required>
+
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio"  name="gender" value="Female">Female
+
+
+        <input type="checkbox" name="city">Ahmedabad
+        <input type="checkbox" name="city">Baroda
+        <input type="checkbox" name="city">Surat
+        <input type="checkbox" name="city">Bombay
+
+        City :
+        <select name="city" id="">
+            <option value="">Select city</option>
+            <option value="Ahmedabad">Ahm</option>
+            <option value="baroda">Baroda</option>
+            <option value="bombay">bombay</option>
+        </select>
+
+        city1: <input list="city_list" name="city_list">
+        <datalist id="city_list">
+            <option value="Ahmedabad">Ahm</option>
+            <option value="baroda">Baroda</option>
+            <option value="bombay">bombay</option>
+
+        </datalist>
+
+        city2 :<input list="city_list" name="city_list">
+
+        <input type="button" value="login">
+
+    </form>
+
+</body>
+</html>
