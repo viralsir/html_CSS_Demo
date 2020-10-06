@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <script>
+        function hello(){
+
+            const head=document.querySelector("h1")
+
+            // alert('hello');
+            if(head.innerHTML === 'Hello')
+            {
+                head.innerHTML='Good bye';
+            }
+            else
+            {
+                head.innerHTML='Hello';
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+        <h1>Hello</h1>
+        <button onclick="hello()">click here </button>
+</body>
+</html>
