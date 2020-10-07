@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form demo</title>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+
+            document.querySelector("form").onsubmit=function (){
+
+                let name=document.querySelector("#name").value;
+                document.querySelector("h1").innerHTML=` Hello ${name}`;
+
+               return false;
+            }
+        })
+    </script>
+</head>
+<body>
+    <h1> Hello </h1>
+    <form>
+        <input type="text" id="name" placeholder="First Name ">
+        <input type="submit">
+    </form>
+</body>
+</html>

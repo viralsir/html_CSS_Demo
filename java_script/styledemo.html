@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>style</title>
+    <script>
+       /* document.addEventListener('DOMContentLoaded',function (){
+
+           document.querySelectorAll("button").forEach( button => {
+
+               button.onclick=function(){
+                    document.querySelector("h1").style.color=button.dataset.color;
+               }
+
+
+           })
+
+
+        })*/
+
+       document.addEventListener('DOMContentLoaded', () => {
+
+           document.querySelector("select").onchange=function (){
+
+               document.querySelector("h1").style.color=this.value;
+           }
+
+       })
+
+    </script>
+</head>
+<body>
+    <h1> Hello </h1>
+
+
+    <select>
+        <option value="red">Red</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+    </select>
+
+
+
+
+
+    <!--<button data-color="red">red</button>
+    <button data-color="green">green</button>
+    <button data-color="blue">blue</button>-->
+</body>
+</html>
