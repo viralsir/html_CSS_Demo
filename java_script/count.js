@@ -14,7 +14,7 @@ if(!localStorage.getItem('cnt'))
             }
             document.querySelector("h1").innerHTML=count;
             localStorage.setItem('cnt',count);
-
+            //setInterval(counter(),1000)
         }
         document.addEventListener('DOMContentLoaded',function(){
             document.querySelector("button").onclick=counter;
